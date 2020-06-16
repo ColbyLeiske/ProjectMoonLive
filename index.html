@@ -25,10 +25,10 @@
       MozillaResearch.telemetry.performance.mark('LoaderParsingStart');
     </script>
 
-    <script src="ProjectMoonLive/Build/UnityLoader.js"></script>
+    <script src="./Build/UnityLoader.js"></script>
     <script>
         UnityLoader.SystemInfo.mobile = false;  // Workaround to force `UnityLoader` to actually load on mobile.
-        window.gameInstance = UnityLoader.instantiate('gameContainer', 'ProjectMoonLive/Build/bin.json', {
+        window.gameInstance = UnityLoader.instantiate('gameContainer', './Build/bin.json', {
           Module: {
             // `preserveDrawingBuffer` is needed for WebVR content to be mirrored to the `<canvas>`.
             webglContextAttributes: {
